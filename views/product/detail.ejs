@@ -1,0 +1,22 @@
+<%- include("../header.ejs")%>
+  <div class="container-fluid m-4">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="shadow-none p-3 mb-5 bg-light rounded">
+          <h4>Détails Produit N° : <%= product.id %>
+          </h4>
+          <p>
+            Nom : <%= product.name %>
+          </p>
+          <p>
+            Prix : <%= product.price %>
+          </p>
+          <p>
+            Description : <%= product.description %>
+          </p>
+          <a href="/product" class="btn btn-primary">Retour</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <%- include("../footer.ejs") %>

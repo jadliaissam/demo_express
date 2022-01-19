@@ -1,0 +1,17 @@
+<%- include('header.ejs')%>
+    <div class="container">
+        <div class="row">
+            <div class="">
+                <h1>Demo App</h1>
+                <% if(user) { %>
+                    <p>You are Authenticated ! </p>
+                    <p><a href="/logout">Logout</a></p>
+                <% } else {  %>
+                <p>You need to log in to manage Products</p>
+                <p><a href="/login">Login</a></p>
+                <% } %>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
